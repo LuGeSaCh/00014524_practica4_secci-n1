@@ -21,7 +21,7 @@ function recordarActividad(dia) {
   document.getElementById("actividad").textContent = actividad;
 }
 
-// Esta llama la anterior funcion al on click del boton pasando como parametro el valor que le dimos, y se asegura que no se le pase un string vacio
+// Esta llama la anterior funcion al on click del boton pasando como parametro el valor que le dimos, y se considera el caso que no se haya seleccionado nada
 document.getElementById("btnRecordar").addEventListener("click", function () {
   const diaSeleccionado = document.getElementById("diaSemana").value;
   if (diaSeleccionado === "") {
