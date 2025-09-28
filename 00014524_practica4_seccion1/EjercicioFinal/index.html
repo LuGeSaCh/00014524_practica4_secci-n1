@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Recordatorio Semanal</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>CALENDARIO PERSONAL</h1>
+
+        <div class="input-group">
+            <label for="diaSemana">Selecciona el dia de la semana:</label>
+            <select id="diaSemana">
+                <option value="">-- Elige un dia --</option>
+                <option value="lunes">Lunes</option>
+                <option value="martes">Martes</option>
+                <option value="miercoles">Miércoles</option>
+                <option value="jueves">Jueves</option>
+                <option value="viernes">Viernes</option>
+                <option value="sabado">Sábado</option>
+                <option value="domingo">Domingo</option>
+            </select>
+        </div>
+
+        <button id="btnRecordar">Recordar Actividad</button>
+
+        <div>
+            <div class="dia-actual" id="diaActual"></div>
+            <div class="actividad" id="actividad"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
